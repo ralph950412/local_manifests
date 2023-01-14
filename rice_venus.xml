@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- riceDroid manifest for venus -->
+
+    <!-- Remotes -->
+    <remote name="tofu" fetch="https://github.com/ralph950412" revision="rice-tm" />
+    <remote name="tofu-gitlab" fetch="https://gitlab.com/ralph950412" />
+    <remote name="pe" fetch="https://github.com/PixelExperience" revision="thirteen" />
+    <remote name="pe-blobs" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" revision="thirteen" />
+    <remote name="flower" fetch="https://github.com/FlowerSea0208" revision="thirteen" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/venus" name="android_device_xiaomi_venus" remote="tofu" />
+    <project path="device/xiaomi/sm8350-common" name="android_device_xiaomi_sm8350-common" remote="tofu" />
+
+    <!-- Kernel -->
+    <project path="kernel/xiaomi/venus" name="kernel_xiaomi_venus" remote="flower" />
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/venus" name="android_vendor_xiaomi_venus" remote="tofu" />
+    <project path="vendor/xiaomi/sm8350-common" name="android_vendor_xiaomi_sm8350-common" remote="tofu" />
+    <project path="vendor/xiaomi/venus-firmware" name="vendor_xiaomi_venus-firmware" remote="pe-blobs" revision="twelve" />
+    <project path="vendor/xiaomi/venus-gcam" name="vendor_xiaomi_venus-gcam" remote="tofu-gitlab" revision="tm-qpr1" />
+    <project path="vendor/xiaomi/venus-miuicamera" name="vendor_xiaomi_venus-miuicamera" remote="tofu-gitlab" revision="thirteen" />
+    
+</manifest>
